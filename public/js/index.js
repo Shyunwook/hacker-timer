@@ -1,9 +1,5 @@
 let socket = io();
 
-socket.on('test',function(msg){
-    console.log(msg);
-})
-
 $(document).ready(function(){
     $('#clock').countdown('2019/09/06 09:00:00', function (event) {
         $(this).html(event.strftime(
@@ -19,10 +15,24 @@ $(document).ready(function(){
         $('.timer_area').hide();
         $('#notice').show();
         $('#notice').html(msg.replace(/\n/gi, '<br>'));
+        $('#poster').hide();
     });
 
     socket.on('timer', function(){
         $('.timer_area').show();
         $('#notice').hide();
+        $('#poster').hide();
+    });
+
+    socket.on('poster', function(){
+        if(window.outerHeight > window.outerWidth){
+            $('#poster').show();
+            $('.timer_area').hide();
+            $('#notice').hide();
+        }else{
+            $('.timer_area').show();
+            $('#notice').hide();
+            $('#poster').hide();
+        }
     })
 })

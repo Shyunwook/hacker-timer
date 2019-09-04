@@ -25,6 +25,8 @@ io.on('connection', (socket) => {
             io.emit(option, msg);
         }else if(option === "timer"){
             io.emit(option);
+        }else if(option === "poster"){
+            io.emit(option);
         }
     })
 })
