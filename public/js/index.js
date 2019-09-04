@@ -5,7 +5,7 @@ socket.on('test',function(msg){
 })
 
 $(document).ready(function(){
-    $('#clock').countdown('2019/09/06 15:00:00', function (event) {
+    $('#clock').countdown('2019/09/06 09:00:00', function (event) {
         $(this).html(event.strftime(
             `<span class="num">%H</span>
             <span class="colon">:</span>
