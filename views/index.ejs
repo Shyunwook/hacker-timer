@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TIMER</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.js"></script>
+    <script src="/js/index.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body id="timer">
+    <div id="left-top" class="back left"></div>
+    <div id="right-top" class="back right"></div>
+    <div id="left-bottom" class="back left"></div>
+    <div id="right-bottom" class="back right"></div>
+    <div class="center">
+        <img src="/images/middle.png" />
+    </div>
+    <div class="timer_area">
+        <div id="top">
+            <p class="top_title">HACKATHON<br>TIMER</p>
+        </div>
+        <div id="contents">
+            <p id="clock"><span class="num">00</span><span class="colon">:</span><span class="num">00</span><span
+                    class="colon">:</span><span class="num">00</span></p>
+        </div>
+        <div id="bottom">
+            <img class="bottom_logo" src="/images/logo.png">
+        </div>
+    </div>
+    <div id="notice"></div>
+
+</body>
+
+</html>

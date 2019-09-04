@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#timer {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #231260;
+}
+
+.back {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* #center{
+    position: absolute;
+    width: 1600px;
+    height: 550px;
+    margin: 10.3% auto;
+    left: 0;
+    right: 0;
+    background: url('../images/middle.png') center center no-repeat;
+} */
+
+#contents {
+    z-index: 100;
+    position: absolute;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: fit-content;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;
+    z-index: -1;
+}
+
+.top_title {
+    font-family: Bungee;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#clock {
+    color: #ee127f;
+    font-family: 'Bungee', cursive;
+    margin: 0;
+    line-height: 300px;
+}
+
+#notice {
+    color: #ee127f;
+    font-family: 'yg-jalnan';
+    margin: 0;
+    font-size: 150px;
+    height: 400px;
+    word-break: break-all;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 80%;
+}
+
+#clock span {
+    display: block;
+    float: left;
+}
+
+#clock .num {
+    font-size: 17vw;
+    display: block;
+}
+
+#clock .colon {
+    font-size: 14vw;
+    display: block;
+}
+
+#top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 180px;
+}
+
+#top p {
+    margin: 0;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom_logo {
+    width: 320px;
+    height: 132px;
+}
+
+.center img {
+    width: 100%;
+}
+
+#left-top {
+    background: url('../images/left-top.png') left top no-repeat;
+    background-size: 100%;
+    left: 0;
+}
+
+#left-bottom {
+    background: url('../images/left-bottom.png') left bottom no-repeat;
+    background-size: 100%;
+    bottom: 0;
+}
+
+#right-top {
+    background: url('../images/right-top.png') right top no-repeat;
+    background-size: 100%;
+    right: 0;
+}
+
+#right-bottom {
+    background: url('../images/right-bottom.png') right bottom no-repeat;
+    background-size: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+#message{
+    width: 800px;
+    height: 400px;
+}
+
+.notice_control{
+    margin-top: 100px;
+}
+
