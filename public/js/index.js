@@ -14,7 +14,7 @@ $(document).ready(function(){
     socket.on('notice', function(msg){
         $('.timer_area').hide();
         $('#notice').show();
-        $('#notice').html(msg.replace(/\n/gi, '<br>'));
+        $('#notice').html(decodeURIComponent(msg).replace(/\n/gi, '<br>'));
         $('#poster').hide();
     });
 
