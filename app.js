@@ -20,9 +20,8 @@ app.get('/admin', (_, res) => {
 
 io.on('connection', (socket) => {
     socket.on('trigger', function (option, msg) {
-        console.log(option, msg);
         if(option === "notice"){
-            io.emit(option, msg);
+            io.emit(option, msg.toString());
         }else if(option === "timer"){
             io.emit(option);
         }else if(option === "poster"){
